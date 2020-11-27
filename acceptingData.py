@@ -58,18 +58,6 @@ while(int(xCounter) <= int(xCoord)):
     holdXYZ = open("holdXYZ.xyz" , "a") #put the x y and z values in this file and append it to the previous file for 3D graphing purposes
     d = open("holdDist.txt" , "r") #get the distance values from this file
 
-#    angleInitial = 0
-#    angle = 360/171 * math.pi/180 #find the angle and convert it to radians 
-
-#    for line in d: #itterate through the holdDist file to calculate the new x and y values
-#        hyp = int(line)
-
-#        #calcualtions for when angle is not 0 rad
-#        zCoord = hyp * math.sin(angle)
-#        yCoord = hyp * math.cos(angle)
-#        holdXYZ.write(str(xCounter) + " " + str(yCoord) + " " + str(zCoord) + '\n') #cast y and z to strings
-#        angleInitial = angleInitial + angle
-
     rad = 0
     radInc = 360/171 * (math.pi/180)
     for line in d:
